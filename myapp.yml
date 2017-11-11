@@ -1,0 +1,14 @@
+version: '2'
+services:
+  candl-web:
+    image: mohanraz/frontend
+    container_name: frontend
+    hostname: frontend
+    mem_limit: 128M
+    ports:
+      - 80:80
+  candl-backend:
+    image: mohanraz/backend
+    container_name: candl-backend
+    hostname: candl-backend
+    mem_limit: 128M
